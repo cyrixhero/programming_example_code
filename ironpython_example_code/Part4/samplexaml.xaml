@@ -1,0 +1,8 @@
+﻿<Page xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:sys="clr-namespace:System;assembly=mscorlib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" >
+  <StackPanel Width="200" Height="100" Margin="35" Orientation="Vertical">
+      <Label>請輸入姓名:</Label>
+      <TextBox x:Name="myInput" />
+      <Label>您輸入的姓名是:</Label>
+      <TextBlock Text="{Binding ElementName=myInput, Path=Text}" Foreground="Red" />
+    </StackPanel>
+</Page>
